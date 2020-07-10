@@ -1,0 +1,5 @@
+<resources>
+    <string name="module_rating">SimpleRatingBar</string>
+    <string name="module_review">ReviewRatings</string>
+    <string name="app_name">ReviewRatings</string>
+</resources>

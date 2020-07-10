@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Tshirt"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Order History"></item>
+
+        <item
+            android:id="@+id/Backpack"
+            android:title="Sign out"></item>
+        <item
+            android:id="@+id/Hoodie"
+            android:title="Sign out"></item>
+        <item
+            android:id="@+id/Jacket"
+            android:title="Sign out"></item>
+        <item
+            android:id="@+id/Sign"
+            android:title="Sign out"></item>
+    </group>
+    <item android:title="comm">
+        <menu>
+            <item
+                android:id="@+id/changeInfo"
+                android:title="Change Info"></item>
+            <item android:id="@+id/logn"
+                android:title="Sign out"></item>
+        </menu>
+    </item>
+</menu>

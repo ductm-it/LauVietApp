@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".Activity.TrangChuActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        app:title="ADMIN"
+        android:background="@color/toolbaradmin"
+        app:titleTextColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btndonhang"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="20sp"
+            android:background="@drawable/buttonsdark"
+            android:padding="17dp"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:text="Quản lí đơn hàng"
+            android:textColor="@android:color/white" />
+        <Button
+        android:background="@drawable/buttonsdark"
+        android:textSize="17sp"
+        android:textColor="#fff"
+        android:id="@+id/btnsanpham"
+        android:textAllCaps="false"
+        android:text="Quản lí sản phẩm"
+        android:layout_margin="20sp"
+            android:padding="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"></Button>
+
+        <Button
+            android:background="@drawable/buttonsdark"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:id="@+id/btntaikhoan"
+            android:textAllCaps="false"
+            android:text="Quản lý tài khoản"
+            android:layout_margin="17sp"
+            android:padding="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"></Button>
+
+        <Button
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:background="@drawable/buttonsdark"
+            android:id="@+id/btndoanhthu"
+            android:text="Thống kê doanh thu"
+            android:textAllCaps="false"
+            android:layout_margin="17sp"
+            android:padding="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"></Button>
+    </LinearLayout>
+
+</LinearLayout>

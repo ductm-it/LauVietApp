@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Lẩu Việt</string>
+    <string name="title_activity_main_menu">MainMENUActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="login_title">ĐĂNG NHẬP</string>
+    <string name="login_lable1">Tài Khoản</string>
+    <string name="login_lable2">Mật Khẩu</string>
+    <string name="login_btn">Đăng nhập</string>
+    <string name="register_title">TẠO TÀI KHOẢN</string>
+    <string name="register_email">Email</string>
+    <string name="register_btn">Đăng Ký</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

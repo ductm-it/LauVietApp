@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LauActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="#ffff"
+        app:title="Giỏ hàng"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:id="@+id/toolbargiohang"
+        android:background="@color/mot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textviewthongbao"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="Giỏ hàng bạn đang trống"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <ListView
+                android:id="@+id/listviewgiohang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+                <TextView
+                    android:textColor="#f20"
+                    android:layout_marginLeft="16dp"
+                    android:text="Tổng tiền:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="right|center">
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/textviewtongtien"
+                    android:textColor="#f20"
+                    android:text="Giá trị"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:text="Thanh toán"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryLight"
+        android:textColor="#fff"
+        android:id="@+id/buttonthanhtoangiohang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></Button>
+    <Button
+        android:layout_marginTop="5dp"
+        android:text="Tiếp tục mua hàng"
+        android:background="@color/colorPrimaryLight"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:id="@+id/buttontieptucmuahang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></Button>
+</LinearLayout>

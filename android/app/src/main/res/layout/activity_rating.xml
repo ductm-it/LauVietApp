@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="#ffff"
+        app:title="Giỏ hàng"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:id="@+id/toolbargiohang"
+        android:background="@color/mot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listviewrating"
+                android:layout_width="match_parent"
+                android:layout_height="521dp"></ListView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:text="Hoàn tất đánh giá"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryLight"
+        android:textColor="#fff"
+        android:id="@+id/buttonrating"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></Button>
+    <Button
+        android:layout_marginTop="5dp"
+        android:text="Không cần đánh giá"
+        android:background="@color/colorPrimaryLight"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:id="@+id/buttonskiprating"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></Button>
+</LinearLayout>

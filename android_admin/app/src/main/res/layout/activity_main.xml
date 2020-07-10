@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbaradmin"
+        app:titleTextColor="@color/white"
+        app:title="LOGIN"></androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="50sp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo2" />
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="Lẩu Việt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iconUsername"
+        android:src="@drawable/login"
+        android:background="@drawable/imagesadmin"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+    </ImageView>
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iconUsername"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/input_designment_admin"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/iconPassword"
+        android:background="@drawable/imagesadmin"
+        android:src="@drawable/password">
+    </ImageView>
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/iconPassword"
+        android:layout_marginLeft="3dp"
+        android:background="@drawable/input_designment_admin"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint" />
+</RelativeLayout>
+
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/buttonsdark"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <!-- Link to Login Screen -->
+
+
+    </LinearLayout>
+
+</LinearLayout>

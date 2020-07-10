@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activity.CapNhatTaiKhoanActivity">
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbarThemTK"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="#ffff"
+        android:background="@color/toolbaradmin"
+        app:title="THÊM TÀI KHOẢN"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:textColor="@color/input_register_hint"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Tên đăng nhập"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/input_designment_admin"
+            android:hint="Tên đăng nhập"
+            android:id="@+id/editTenTK"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/input_register_hint"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Mật khẩu"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/input_designment_admin"
+            android:id="@+id/editMatKhau"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+android:hint="Mật khẩu"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/input_register_hint"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Email"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/input_designment_admin"
+            android:hint="Email"
+            android:id="@+id/editEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Địa chỉ"
+            android:textColor="@color/input_register_hint"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:background="@drawable/input_designment_admin"
+            android:id="@+id/editDiaChi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+android:hint="Địa chỉ"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/input_register_hint"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Điện thoại"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/input_designment_admin"
+            android:id="@+id/editDienThoai"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:hint="Điện thoại"
+            android:textColorHint="@color/input_register_hint" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/input_register_hint"
+            android:textStyle="bold"
+            android:paddingLeft="13dp"
+            android:textSize="20sp"
+            android:text="Quyền"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <Spinner
+            android:background="@drawable/input_designment_admin"
+            android:id="@+id/quyen"
+            android:layout_width="140sp"
+            android:layout_height="45sp">
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/buttonsdark"
+        android:textColor="@color/white"
+        android:id="@+id/btnThemTK"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Thêm "></Button>
+</LinearLayout>
